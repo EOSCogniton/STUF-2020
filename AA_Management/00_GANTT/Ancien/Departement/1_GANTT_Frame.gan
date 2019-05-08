@@ -64,6 +64,7 @@
         </task>
         <task id="10" name="Finir BOM" color="#8cb6ce" meeting="false" start="2019-05-08" duration="4" complete="0" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true"/>
         <task id="1" name="Recontacter Tachon" color="#8cb6ce" meeting="false" start="2019-05-08" duration="7" complete="0" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true"/>
+        <task id="40" name="Tets" meeting="false" start="2019-04-22" duration="1" complete="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="TMN" function="Default:0" contacts="" phone=""/>
