@@ -61,27 +61,28 @@
             <task id="113" name="CCA" color="#8cb6ce" meeting="false" start="2019-05-22" duration="5" complete="0" thirdDate="2019-04-25" thirdDate-constraint="0" expand="true"/>
             <task id="115" name="MIP-3D" color="#8cb6ce" meeting="false" start="2019-05-29" duration="5" complete="0" thirdDate="2019-04-25" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="47" name="Frame" meeting="false" start="2019-05-08" duration="12" complete="0" expand="true">
-            <task id="20" name="Réunion Aéro" color="#330033" meeting="false" start="2019-05-08" duration="12" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
-                <task id="0" name="Organiser réunion Aéro 1" color="#ffff33" meeting="false" start="2019-05-08" duration="5" complete="0" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
-                    <depend id="43" type="2" difference="0" hardness="Strong"/>
-                </task>
-                <task id="43" name="Répartition Simulation" color="#ffff33" meeting="false" start="2019-05-15" duration="1" complete="0" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+        <task id="47" name="Frame" meeting="false" start="2019-05-08" duration="9" complete="0" expand="true">
+            <task id="20" name="Réunion Aéro" color="#330033" meeting="false" start="2019-05-08" duration="9" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                <task id="0" name="Organiser réunion Aéro 1" color="#ffff33" meeting="false" start="2019-05-08" duration="5" complete="0" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
+                <task id="43" name="Préparation simulation" color="#ffff33" meeting="false" start="2019-05-08" duration="3" complete="0" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                    <notes><![CDATA[TMN SkidPad
+
+Agostino Accel]]></notes>
                     <depend id="14" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="14" name="Suivi Simulation" color="#ffff33" meeting="false" start="2019-05-16" duration="4" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                <task id="14" name="Simulation" color="#ffff33" meeting="false" start="2019-05-13" duration="4" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                     <notes><![CDATA[Il faut obtenir Cx et Cz
 ]]></notes>
                     <depend id="17" type="2" difference="0" hardness="Strong"/>
                     <depend id="52" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="17" name="Calcul indicateurs + Demander Simu Accel/Slid" color="#ffff33" meeting="false" start="2019-05-22" duration="1" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
+                <task id="17" name="Calcul indicateurs + Demander Simu Accel/Slid" color="#ffff33" meeting="false" start="2019-05-17" duration="1" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
                     <notes><![CDATA[€/points
 
 €/kg downforce]]></notes>
                     <depend id="19" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="19" name="Réunion 2 EPSAéro ou pas" color="#ffff33" meeting="false" start="2019-05-23" duration="1" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true"/>
+                <task id="19" name="Réunion 2 EPSAéro ou pas" color="#ffff33" meeting="false" start="2019-05-20" duration="1" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true"/>
             </task>
             <task id="36" name="Devis Aéro" color="#330033" meeting="false" start="2019-05-08" duration="2" complete="0" thirdDate="2019-05-08" thirdDate-constraint="1" expand="true">
                 <task id="38" name="Lancer Devis" color="#ffff33" meeting="false" start="2019-05-08" duration="1" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
@@ -93,7 +94,7 @@
             <task id="45" name="Recontacter Tachon" color="#ffff33" meeting="false" start="2019-05-08" duration="7" complete="0" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
         </task>
         <task id="48" name="Motorisation" color="#330033" meeting="false" start="2019-05-06" duration="15" complete="0" thirdDate="2019-05-06" thirdDate-constraint="0" expand="true">
-            <task id="50" name="Modèle" color="#330033" meeting="false" start="2019-05-08" duration="13" complete="0" thirdDate="2019-05-08" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+            <task id="50" name="Modèle" color="#330033" meeting="false" start="2019-05-08" duration="10" complete="0" thirdDate="2019-05-08" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                 <task id="73" name="Optimum Lap" color="#0066ff" meeting="false" start="2019-05-08" duration="10" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                     <notes><![CDATA[Circuit FS ATA]]></notes>
                 </task>
@@ -102,7 +103,7 @@
 ]]></notes>
                     <depend id="52" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="52" name="Simulation avec aéro" color="#0066ff" meeting="false" start="2019-05-22" duration="3" complete="0" thirdDate="2019-05-15" thirdDate-constraint="0" expand="true"/>
+                <task id="52" name="Simulation avec aéro" color="#0066ff" meeting="false" start="2019-05-17" duration="3" complete="0" thirdDate="2019-05-15" thirdDate-constraint="0" expand="true"/>
             </task>
             <task id="57" name="Refroidissement" color="#000000" meeting="false" start="2019-05-20" duration="5" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                 <task id="58" name="Architecture à définir" color="#0066ff" meeting="false" start="2019-05-20" duration="5" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
