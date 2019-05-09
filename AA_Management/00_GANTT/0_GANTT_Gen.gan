@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Gantt EPSA" company="EPSA" webLink="http://" view-date="2019-04-19" view-index="0" gantt-divider-location="447" resource-divider-location="300" version="2.8.10" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Gantt EPSA" company="EPSA" webLink="http://" view-date="2019-05-01" view-index="0" gantt-divider-location="447" resource-divider-location="300" version="2.8.10" locale="fr">
     <description/>
     <view zooming-state="default:0" id="gantt-chart">
         <field id="tpd3" name="Nom" width="216" order="0"/>
@@ -6,7 +6,7 @@
         <field id="tpd5" name="Date de fin" width="113" order="2"/>
         <option id="taskLabelLeft" value="name"/>
         <option id="taskLabelRight" value="coordinator"/>
-        <option id="color.recent"><![CDATA[#ffff33 #ece9d8 #330033 #0066ff #ff0000 #00cc00]]></option>
+        <option id="color.recent"><![CDATA[#ff0000 #330033 #ffff33 #ece9d8 #0066ff #00cc00]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Nom" width="210" order="0"/>
@@ -36,7 +36,7 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="46" name="Tops" meeting="false" start="2019-04-03" duration="320" complete="0" expand="true">
+        <task id="46" name="Tops" meeting="false" start="2019-04-03" duration="320" complete="0" expand="false">
             <task id="1" name="Top Projet" color="#000000" meeting="true" start="2019-04-03" duration="0" complete="0" thirdDate="2019-04-01" thirdDate-constraint="0" priority="2" expand="true"/>
             <task id="42" name="RVP2" color="#000000" meeting="true" start="2019-04-03" duration="0" complete="0" thirdDate="2019-04-01" thirdDate-constraint="0" priority="2" expand="true"/>
             <task id="39" name="Roll Out" color="#000000" meeting="true" start="2019-04-10" duration="0" complete="0" thirdDate="2019-04-01" thirdDate-constraint="0" priority="2" expand="true"/>
@@ -61,8 +61,8 @@
             <task id="113" name="CCA" color="#8cb6ce" meeting="false" start="2019-05-22" duration="5" complete="0" thirdDate="2019-04-25" thirdDate-constraint="0" expand="true"/>
             <task id="115" name="MIP-3D" color="#8cb6ce" meeting="false" start="2019-05-29" duration="5" complete="0" thirdDate="2019-04-25" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="47" name="Frame" meeting="false" start="2019-05-08" duration="9" complete="0" expand="true">
-            <task id="20" name="Réunion Aéro" color="#330033" meeting="false" start="2019-05-08" duration="9" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+        <task id="47" name="Frame" meeting="false" start="2019-05-08" duration="11" complete="0" expand="false">
+            <task id="20" name="Réunion Aéro" color="#330033" meeting="false" start="2019-05-08" duration="11" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                 <task id="0" name="Organiser réunion Aéro 1" color="#ffff33" meeting="false" start="2019-05-08" duration="5" complete="0" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
                 <task id="43" name="Préparation simulation" color="#ffff33" meeting="false" start="2019-05-08" duration="3" complete="0" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                     <notes><![CDATA[TMN SkidPad
@@ -82,7 +82,7 @@ Agostino Accel]]></notes>
 €/kg downforce]]></notes>
                     <depend id="19" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="19" name="Réunion 2 EPSAéro ou pas" color="#ffff33" meeting="false" start="2019-05-20" duration="1" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true"/>
+                <task id="19" name="Réunion 2 EPSAéro ou pas" color="#ffff33" meeting="false" start="2019-05-22" duration="1" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true"/>
             </task>
             <task id="36" name="Devis Aéro" color="#330033" meeting="false" start="2019-05-08" duration="2" complete="0" thirdDate="2019-05-08" thirdDate-constraint="1" expand="true">
                 <task id="38" name="Lancer Devis" color="#ffff33" meeting="false" start="2019-05-08" duration="1" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
@@ -103,7 +103,9 @@ Agostino Accel]]></notes>
 ]]></notes>
                     <depend id="52" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="52" name="Simulation avec aéro" color="#0066ff" meeting="false" start="2019-05-17" duration="3" complete="0" thirdDate="2019-05-15" thirdDate-constraint="0" expand="true"/>
+                <task id="52" name="Simulation avec aéro" color="#0066ff" meeting="false" start="2019-05-17" duration="3" complete="0" thirdDate="2019-05-15" thirdDate-constraint="0" expand="true">
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                </task>
             </task>
             <task id="57" name="Refroidissement" color="#000000" meeting="false" start="2019-05-20" duration="5" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                 <task id="58" name="Architecture à définir" color="#0066ff" meeting="false" start="2019-05-20" duration="5" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
@@ -121,6 +123,42 @@ Agostino Accel]]></notes>
                 <task id="69" name="Sytème de remplissage plus léger" color="#0066ff" meeting="false" start="2019-05-08" duration="10" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
             </task>
         </task>
+        <task id="116" name="LAS" meeting="false" start="2019-05-08" duration="15" complete="0" expand="true">
+            <task id="117" name="Pneu" meeting="false" start="2019-05-08" duration="15" complete="0" expand="true">
+                <task id="118" name="Modèle de pneu" color="#ff0000" meeting="false" start="2019-05-08" duration="10" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[Code
+
+Donnée TTC]]></notes>
+                    <depend id="132" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="121" name="Modèle accélération latérale" color="#ff0000" meeting="false" start="2019-05-08" duration="5" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true">
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                    <depend id="132" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="126" name="Modèle accélération longitudinale" color="#ff0000" meeting="false" start="2019-05-08" duration="5" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[Avec ASE
+]]></notes>
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                    <depend id="132" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="142" name="Modèle freinage" color="#ff0000" meeting="false" start="2019-05-08" duration="5" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[Choix aéro
+]]></notes>
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="132" name="Matrice de décision" color="#ff0000" meeting="false" start="2019-05-22" duration="5" complete="0" thirdDate="2019-05-22" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="139" name="Suspension" meeting="false" start="2019-05-22" duration="5" complete="0" expand="true">
+                <task id="141" name="Choix architecture" color="#ff0000" meeting="false" start="2019-05-22" duration="5" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="140" name="BAR" meeting="false" start="2019-05-22" duration="5" complete="0" expand="true">
+                <task id="166" name="Choix architecture" color="#ff0000" meeting="false" start="2019-05-22" duration="5" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="148" name="Optimum Kinematics" color="#330033" meeting="false" start="2019-05-08" duration="15" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true">
+                <task id="151" name="Prise en main" color="#ff0000" meeting="false" start="2019-05-08" duration="10" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true"/>
+                <task id="152" name="Faire le CR" color="#ff0000" meeting="false" start="2019-05-08" duration="15" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
     </tasks>
     <resources>
         <resource id="0" name="TMN" function="Default:0" contacts="" phone=""/>
@@ -134,6 +172,12 @@ Agostino Accel]]></notes>
         <resource id="8" name="IGH" function="Default:0" contacts="" phone=""/>
         <resource id="9" name="GLD" function="Default:0" contacts="" phone=""/>
         <resource id="10" name="EBA" function="Default:0" contacts="" phone=""/>
+        <resource id="11" name="MKI" function="Default:0" contacts="" phone=""/>
+        <resource id="12" name="MSO" function="Default:0" contacts="" phone=""/>
+        <resource id="13" name="PAX" function="Default:0" contacts="" phone=""/>
+        <resource id="14" name="ADT" function="Default:0" contacts="" phone=""/>
+        <resource id="15" name="VDA" function="Default:0" contacts="" phone=""/>
+        <resource id="16" name="PCK" function="Default:0" contacts="" phone=""/>
     </resources>
     <allocations>
         <allocation task-id="0" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
@@ -143,10 +187,21 @@ Agostino Accel]]></notes>
         <allocation task-id="45" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="51" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="58" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="126" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="75" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="73" resource-id="8" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="69" resource-id="9" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="69" resource-id="10" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="121" resource-id="11" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="126" resource-id="11" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="132" resource-id="11" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="118" resource-id="12" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="132" resource-id="12" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="141" resource-id="13" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="142" resource-id="14" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="166" resource-id="15" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="151" resource-id="16" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="152" resource-id="16" function="Default:0" responsible="true" load="100.0"/>
     </allocations>
     <vacations/>
     <previous/>
