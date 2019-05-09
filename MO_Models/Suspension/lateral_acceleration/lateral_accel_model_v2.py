@@ -71,12 +71,12 @@ for i in range(len(MASS)):
         h=(MASS[i]/m)*H[j]+(m_pilot/m)*h_pilot
         
         
-        def FORCE(a):
-            Zfe=xf*m*g/2 + Df/2 + xr*m*a*h/tf
-            Zfi=xf*m*g/2 + Df/2 - xr*m*a*h/tf
-            Zre=xr*m*g/2 + Dr/2 + xf*m*a*h/tr
-            Zri=xr*m*g/2 + Dr/2 - xf*m*a*h/tr
-            return Y(Zfe)+Y(Zfi)+Y(Zre)+Y(Zri) - m*a
+#        def FORCE(a):
+#            Zfe=xf*m*g/2 + Df/2 + xr*m*a*h/tf
+#            Zfi=xf*m*g/2 + Df/2 - xr*m*a*h/tf
+#            Zre=xr*m*g/2 + Dr/2 + xf*m*a*h/tr
+#            Zri=xr*m*g/2 + Dr/2 - xf*m*a*h/tr
+#            return Y(Zfe)+Y(Zfi)+Y(Zre)+Y(Zri) - m*a
         def TORQUE(a):
             Zfe=xf*m*g/2 + Df/2 + xr*m*a*h/(2*tf)
             Zfi=xf*m*g/2 + Df/2 - xr*m*a*h/(2*tf)
@@ -84,7 +84,7 @@ for i in range(len(MASS)):
             Zri=xr*m*g/2 + Dr/2 - xf*m*a*h/(2*tr)
             return xf*(Y(Zre)+Y(Zri))-xr*(Y(Zfe)+Y(Zfi))
         
-        amax_force = fsolve(FORCE,Aodg)
+        amax_force = 0
         amax_torque = fsolve(TORQUE,Aodg)
         amax = min(amax_force,amax_torque)
         ACC[i,j] = amax/g
