@@ -6,7 +6,7 @@
         <field id="tpd5" name="Date de fin" width="113" order="2"/>
         <option id="taskLabelLeft" value="name"/>
         <option id="taskLabelRight" value="coordinator"/>
-        <option id="color.recent"><![CDATA[#ffff33 #ff0000 #330033 #ece9d8 #0066ff #00cc00]]></option>
+        <option id="color.recent"><![CDATA[#00cc00 #ece9d8 #ffff33 #ff0000 #330033 #0066ff]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Nom" width="210" order="0"/>
@@ -61,7 +61,7 @@
             <task id="113" name="CCA" color="#8cb6ce" meeting="false" start="2019-05-22" duration="5" complete="0" thirdDate="2019-04-25" thirdDate-constraint="0" expand="true"/>
             <task id="115" name="MIP-3D" color="#8cb6ce" meeting="false" start="2019-05-29" duration="5" complete="0" thirdDate="2019-04-25" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="47" name="Frame" meeting="false" start="2019-05-08" duration="11" complete="16" expand="true">
+        <task id="47" name="Frame" meeting="false" start="2019-05-08" duration="11" complete="16" expand="false">
             <task id="20" name="Réunion Aéro" color="#330033" meeting="false" start="2019-05-08" duration="11" complete="37" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                 <task id="0" name="Organiser réunion Aéro 1" color="#ffff33" meeting="false" start="2019-05-08" duration="6" complete="100" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                     <depend id="168" type="2" difference="0" hardness="Strong"/>
@@ -96,7 +96,7 @@ Agostino Accel]]></notes>
             <task id="10" name="Finir BOM" color="#ffff33" meeting="false" start="2019-05-08" duration="4" complete="0" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
             <task id="45" name="Recontacter Tachon" color="#ffff33" meeting="false" start="2019-05-08" duration="7" complete="0" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
         </task>
-        <task id="48" name="Motorisation" color="#330033" meeting="false" start="2019-05-06" duration="15" complete="0" thirdDate="2019-05-06" thirdDate-constraint="0" expand="true">
+        <task id="48" name="Motorisation" color="#330033" meeting="false" start="2019-05-06" duration="15" complete="0" thirdDate="2019-05-06" thirdDate-constraint="0" expand="false">
             <task id="50" name="Modèle" color="#330033" meeting="false" start="2019-05-08" duration="10" complete="0" thirdDate="2019-05-08" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                 <task id="73" name="Optimum Lap" color="#0066ff" meeting="false" start="2019-05-08" duration="10" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                     <notes><![CDATA[Circuit FS ATA]]></notes>
@@ -126,7 +126,7 @@ Agostino Accel]]></notes>
                 <task id="69" name="Sytème de remplissage plus léger" color="#0066ff" meeting="false" start="2019-05-08" duration="10" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
             </task>
         </task>
-        <task id="116" name="LAS" meeting="false" start="2019-05-08" duration="15" complete="0" expand="true">
+        <task id="116" name="LAS" meeting="false" start="2019-05-08" duration="15" complete="0" expand="false">
             <task id="117" name="Pneu" meeting="false" start="2019-05-08" duration="15" complete="0" expand="true">
                 <task id="118" name="Modèle de pneu" color="#ff0000" meeting="false" start="2019-05-08" duration="10" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true">
                     <notes><![CDATA[Code
@@ -160,6 +160,11 @@ Donnée TTC]]></notes>
             <task id="148" name="Optimum Kinematics" color="#330033" meeting="false" start="2019-05-08" duration="15" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true">
                 <task id="151" name="Prise en main" color="#ff0000" meeting="false" start="2019-05-08" duration="10" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true"/>
                 <task id="152" name="Faire le CR" color="#ff0000" meeting="false" start="2019-05-08" duration="15" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
+        <task id="169" name="SEISM" meeting="false" start="2019-05-10" duration="5" complete="0" expand="false">
+            <task id="170" name="Démarchage" meeting="false" start="2019-05-10" duration="5" complete="0" expand="true">
+                <task id="171" name="Caméra de casque" color="#00cc00" meeting="false" start="2019-05-10" duration="5" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true"/>
             </task>
         </task>
     </tasks>
