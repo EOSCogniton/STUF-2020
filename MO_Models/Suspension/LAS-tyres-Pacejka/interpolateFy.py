@@ -5,7 +5,7 @@ Tue May 14 09:18:22 2019 @author(s): MSO
 1 - search the glossary for available Fz values with a valid query
 2 - calculate the model mean in camber and toe
 3 - plot and verify data
-4 - get maximum point for the skidpad model
+4 - get points for the skidpad model
 """
 # glossary file is a global variable loaded in the search_graph library
 from search_graph import loadGlossary
@@ -27,7 +27,7 @@ query = [# comment values to remove them from the query
 
     #physics
     "12f", #pressure
-    "25",  #speed
+    "45",  #speed
 #    "100", #load (FZ)
 
     #geometry
@@ -75,11 +75,21 @@ from f89 import f89# pacejka '89 model function
 from numpy import linspace
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator 
+from scipy.constants import g, lb, mph, kmh
 
 
 # FIGURE
 fig, ax = plt.subplots()
-fig.suptitle('mean in camber and toe')
+
+# tire information in the title
+title = "test: {}{}, tire:{}{}{}{}, pression:{} psi, speed:{:.1f} km/h\
+        \n mean in camber and toe".format(
+        query[0], query[1],  #test
+        *query[2:6],  #tire
+        query[6],  # pression
+        float(query[7])*mph/kmh,  # speed
+        )
+fig.suptitle(title)
 
 # x - label 
 ax.set_xlabel("SA (deg)")
@@ -95,14 +105,22 @@ SA = linspace(-12,12) # deg
 
 for i, f in enumerate(Fz):
     Fy = f89(coeff_Fy[i], SA)
-    plt.plot(SA,Fy)
+    ax.plot(SA,Fy, label="Fz:{:.1f} N".format(f*lb*g))
+
+ax.legend()
     
-#%% 4 - get maximum point for the skidpad model
+#%% 4 - get points for the skidpad model
 from scipy.constants import g, lb
 Fy_max = []
+Fy_SA = []
+sa = -0.9 #deg
 for i, f in enumerate(Fz):
+    # max points
     m = max(f89(coeff_Fy[i], SA))
     Fy_max.append(m)
+    # for a given SA
+    n = f89(coeff_Fy[i], sa)
+    Fy_SA.append(n)
 
 # convert to SI metric units
 # fitted data is already in SI
@@ -110,13 +128,20 @@ Fz = Fz*lb*g #N
 
 # FIGURE
 fig, ax = plt.subplots()
-fig.suptitle('max Fx for a given Fz')
+fig.suptitle('Fy for a given Fz')
 
 # x - label 
 ax.set_xlabel("Fz (N)")
+#ax.xaxis.set_major_locator(MultipleLocator(500))
 
 # y - label
 ax.set_ylabel('Fy(N)')
+#ax.yaxis.set_major_locator(MultipleLocator(500))
 
-plt.plot(Fz,Fy_max,'.')
-    
+# max plots
+ax.plot(Fz,Fy_max,'.', label="max Fy for any SA")
+ax.plot(Fz,Fy_SA,'.', label="SA:{} deg".format(sa))
+
+ax.legend()
+
+print("max friction coefficient:{:.2f}".format(max(Fy_SA/Fz)))

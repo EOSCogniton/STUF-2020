@@ -2,10 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Tue May 14 09:18:22 2019 @author(s): MSO
-1 - search the glossary for available Fz values with a valid query
-2 - calculate the model mean in camber and toe
-3 - plot and verify data
-4 - get maximum point for the skidpad model
+mu en fonction de Fz et Vitesse
 """
 # glossary file is a global variable loaded in the search_graph library
 
