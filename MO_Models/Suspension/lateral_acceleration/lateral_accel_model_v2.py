@@ -8,31 +8,47 @@
 from scipy.optimize import fsolve
 import numpy as np
 from math import pi, sqrt
+#from score_skidpad_fsata import score
 
 #%% GENERAL DATAS
 
-R_skidpad=15.25/2   # rayon du skid pad en m
-g=9.81  # accélération de la pesanteur en m/s²
+R_skidpad= 15.25/2   # rayon du skid pad en m
+g= 9.81  # accélération de la pesanteur en m/s²
 rho = 1.18415 # masse volumique de l'air en kg/m³
-m_pilot=75 # masse du pilot en kg
-h_pilot=0.4 # hauteur de centre de gravité du pilote en m
+m_pilot= 95 # masse du pilot en kg
+h_pilot= 0.3 # hauteur de centre de gravité du pilote en m
 
 #%% CAR DATAS
 
-m= 185 + 15
-h= 0.4
+m_car= 207
+h_car= 0.3
 
-tf= 1.24     # voie avant (en m)
-tr= 1.165     # voie arrière (en m)
+tf= 1.276     # voie avant (en m)
+tr= 1.222     # voie arrière (en m)
 
-w=1.55    # empattement (en m)
-xf = 0.5        # répartition du poids sur l'avant
-xr = 1 - xf     # répartition du poids sur l'arrière
+w= 1.6    # empattement (en m)
+xf = 0.8        # distance entre le train avant et le C.G.
+xr = w - xf     # distance entre le train arrière et le C.G.
+
 
 ## Aero
 
+aero='non'
+
 S = 1.14 #surface effective pour la déportance en m²
-Cy = 2.13 #coefficient de portance
+CZ = 2.13 #coefficient de portance
+m_packaero= 15
+h_aero= 0.4
+
+if aero == 'oui':
+    m_aero=m_packaero
+    Cz=CZ
+else:
+    m_aero=0
+    Cz=0
+
+m= m_car + m_pilot + m_aero
+h= (m_car*h_car + h_pilot*m_pilot + m_aero*h_aero)/m
 
 
 #%% TIRE DATAS
@@ -54,7 +70,7 @@ FY=np.array([0,1519.182,1073.523,2320.305,583.316,1923.809])*2/3
 FY=np.array([0,923.995,714.693,1111.856,420.092,1114.576])*2/3
 
 #Pneus 13" pour un slip angle optimal
-FY=np.array([0,1783.995,1233.106,2692.902,676.343,3363.065])*2/3
+FY=np.array([0,1783.995,1233.106,2692.902,676.343,3363.065])*2/4
 
 
 
@@ -79,16 +95,26 @@ def Y(z):
 # que la voiture ne dérape pas
 
 def FORCE(a):
-    Zfe=xf*m*g/2 + 1/8*Cy*rho*S*a*(R_skidpad+max(tf,tr)) + xr*m*a*h/tf
-    Zfi=xf*m*g/2 + 1/8*Cy*rho*S*a*(R_skidpad+max(tf,tr)) - xr*m*a*h/tf
-    Zre=xr*m*g/2 + 1/8*Cy*rho*S*a*(R_skidpad+max(tf,tr)) + xf*m*a*h/tr
-    Zri=xr*m*g/2 + 1/8*Cy*rho*S*a*(R_skidpad+max(tf,tr)) - xf*m*a*h/tr
+    Zfe=(xr/w)*m*g/2 + 1/8*Cz*rho*S*a*(R_skidpad+max(tf,tr)) + (xr/w)*m*a*h/tf
+    Zfi=(xr/w)*m*g/2 + 1/8*Cz*rho*S*a*(R_skidpad+max(tf,tr)) - (xr/w)*m*a*h/tf
+    Zre=(xf/w)*m*g/2 + 1/8*Cz*rho*S*a*(R_skidpad+max(tf,tr)) + (xf/w)*m*a*h/tr
+    Zri=(xf/w)*m*g/2 + 1/8*Cz*rho*S*a*(R_skidpad+max(tf,tr)) - (xf/w)*m*a*h/tr
     return Y(Zfe)+Y(Zfi)+Y(Zre)+Y(Zri) - m*a
 
-amax = fsolve(FORCE,g)[0]
+def FORCE_f(a):
+    Zfe=(xr/w)*m*g/2 + 1/8*Cz*rho*S*a*(R_skidpad+max(tf,tr)) + (xr/w)*m*a*h/tf
+    Zfi=(xr/w)*m*g/2 + 1/8*Cz*rho*S*a*(R_skidpad+max(tf,tr)) - (xr/w)*m*a*h/tf
+    return Y(Zfe)+Y(Zfi) - (xr/w)*m*a
+
+def FORCE_r(a):
+    Zre=(xf/w)*m*g/2 + 1/8*Cz*rho*S*a*(R_skidpad+max(tf,tr)) + (xf/w)*m*a*h/tr
+    Zri=(xf/w)*m*g/2 + 1/8*Cz*rho*S*a*(R_skidpad+max(tf,tr)) - (xf/w)*m*a*h/tr
+    return Y(Zre)+Y(Zri) - (xf/w)*m*a
+
+amax = min(fsolve(FORCE,g)[0] , fsolve(FORCE_f,g)[0] , fsolve(FORCE_r,g)[0])
 acc = amax/g
 time=2*pi*sqrt((R_skidpad+max(tf,tr)/2)/amax)
     
 print('accélération:',acc,'g')
 print('temps au skid pad:',time,'s')
-print('score au skid-pad:',score(time))
+#print('score au skid-pad:',score(time))
