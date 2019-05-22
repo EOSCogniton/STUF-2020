@@ -10,33 +10,37 @@ import numpy as np
 from math import pi, sqrt
 #from score_skidpad_fsata import score
 
+#%% Input
+
+aero='oui'
+tire= '10'
+
 #%% GENERAL DATAS
 
 R_skidpad= 15.25/2   # rayon du skid pad en m
 g= 9.81  # accélération de la pesanteur en m/s²
 rho = 1.18415 # masse volumique de l'air en kg/m³
-m_pilot= 95 # masse du pilot en kg
+m_pilot= 75 # masse du pilot en kg
 h_pilot= 0.3 # hauteur de centre de gravité du pilote en m
 
 #%% CAR DATAS
 
-m_car= 207
+m_car= 195
 h_car= 0.3
 
-tf= 1.276     # voie avant (en m)
-tr= 1.222     # voie arrière (en m)
+tf= 1.236     # voie avant (en m)
+tr= 1.165    # voie arrière (en m)
 
-w= 1.6    # empattement (en m)
+w= 1.675    # empattement (en m)
 xf = 0.8        # distance entre le train avant et le C.G.
 xr = w - xf     # distance entre le train arrière et le C.G.
 
 
 ## Aero
 
-aero='non'
-
-S = 1.14 #surface effective pour la déportance en m²
-CZ = 2.13 #coefficient de portance
+#Les données aéros sont données pour Optimus
+S= 1.14 #surface effective pour la déportance en m²
+CZ= 2.13 #coefficient de portance
 m_packaero= 15
 h_aero= 0.4
 
@@ -55,23 +59,33 @@ h= (m_car*h_car + h_pilot*m_pilot + m_aero*h_aero)/m
 
 # Donnees extraites des modeles de GTE
 
-# Le coefficient 2/3 est un coeff donné par les testeurs de pneus: ils estiment
-# qu'une vraie piste adhère 2/3 fois moins que leur banc d'essai
+# Le coefficient q est un coeff donné par les testeurs de pneus: ils estiment
+# qu'une vraie piste adhère q fois moins que leur banc d'essai (il valait 2/3 au début)
+
+q=0.483
 
 FZ=np.array([0,667.233,444.822,1112.055,222.411,1556.877])
 
-# Pneus 10" pour un slip angle de -1.6°
-FY=np.array([0,620.662,460.466,876.499,274.269,765.804])*2/3
+## Pneus 10" pour un slip angle de -1.6°
+#FY=np.array([0,620.662,460.466,876.499,274.269,765.804])*2/3
+#
+## Pneus 13" pour un slip angle de -1.6°
+#FY=np.array([0,923.995,714.693,1111.856,420.092,1114.576])*2/3
 
 #Pneus 10" pour un slip angle optimal
-FY=np.array([0,1519.182,1073.523,2320.305,583.316,1923.809])*2/3
-
-# Pneus 13" pour un slip angle de -1.6°
-FY=np.array([0,923.995,714.693,1111.856,420.092,1114.576])*2/3
+FY_10=np.array([0,1519.182,1073.523,2320.305,583.316,1923.809])*q
 
 #Pneus 13" pour un slip angle optimal
-FY=np.array([0,1783.995,1233.106,2692.902,676.343,3363.065])*2/4
+FY_13=np.array([0,1783.995,1233.106,2692.902,676.343,3363.065])*q
 
+m_10 = 5 # différence de masse entre la configuration 13" et 10"
+
+if tire=='10':
+    FY=FY_10
+    m = m - m_10
+else:
+    FY=FY_13
+    m = m
 
 
 Y_poly=np.polyfit(FZ,FY,4)
@@ -114,7 +128,8 @@ def FORCE_r(a):
 amax = min(fsolve(FORCE,g)[0] , fsolve(FORCE_f,g)[0] , fsolve(FORCE_r,g)[0])
 acc = amax/g
 time=2*pi*sqrt((R_skidpad+max(tf,tr)/2)/amax)
-    
+
+print(fsolve(FORCE,g)[0] , ',' , fsolve(FORCE_f,g)[0] , ',' , fsolve(FORCE_r,g)[0])
 print('accélération:',acc,'g')
 print('temps au skid pad:',time,'s')
 #print('score au skid-pad:',score(time))
