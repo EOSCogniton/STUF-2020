@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Gantt EPSA" company="EPSA" webLink="http://" view-date="2019-05-02" view-index="0" gantt-divider-location="469" resource-divider-location="300" version="2.8.10" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Gantt EPSA" company="EPSA" webLink="http://" view-date="2019-05-06" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.10" locale="fr">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="287" order="0"/>
-        <field id="tpd4" name="Date de début" width="91" order="1"/>
-        <field id="tpd5" name="Date de fin" width="87" order="2"/>
+        <field id="tpd3" name="Nom" width="158" order="0"/>
+        <field id="tpd4" name="Date de début" width="62" order="1"/>
+        <field id="tpd5" name="Date de fin" width="61" order="2"/>
         <option id="taskLabelLeft" value="name"/>
         <option id="taskLabelRight" value="coordinator"/>
         <option id="color.recent"><![CDATA[#00cc00 #ffff33 #ff00ff #cccccc #ff0000 #ece9d8 #ffffff #000000 #330033 #0066ff]]></option>
@@ -75,12 +75,19 @@
             <task id="115" name="MIP-3D" color="#cccccc" meeting="false" start="2019-06-03" duration="5" complete="0" thirdDate="2019-04-25" thirdDate-constraint="0" expand="true"/>
             <task id="349" name="Rapport de PE" color="#cccccc" meeting="false" start="2019-05-22" duration="10" complete="0" thirdDate="2019-04-29" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="47" name="Frame" meeting="false" start="2019-05-08" duration="43" complete="25" expand="false">
+        <task id="47" name="Frame" meeting="false" start="2019-05-08" duration="43" complete="40" expand="false">
             <task id="10" name="Finir BOM" color="#ffff33" meeting="false" start="2019-05-08" duration="4" complete="100" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
             <task id="45" name="Recontacter Tachon" color="#ffff33" meeting="false" start="2019-05-08" duration="7" complete="100" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
-            <task id="353" name="Continuer test chassis surfacique" color="#ffff33" meeting="false" start="2019-05-22" duration="33" complete="0" thirdDate="2019-04-29" thirdDate-constraint="0" expand="true"/>
+            <task id="353" name="Continuer test chassis surfacique" color="#ffff33" meeting="false" start="2019-05-22" duration="33" complete="20" thirdDate="2019-04-29" thirdDate-constraint="0" expand="true"/>
+            <task id="360" name="Cdcf des sous systèmes" color="#ffff33" meeting="false" start="2019-05-22" duration="6" complete="20" thirdDate="2019-05-02" thirdDate-constraint="0" expand="true">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="3" name="KPI et CCA" color="#ffff33" meeting="false" start="2019-05-30" duration="6" complete="0" thirdDate="2019-05-30" thirdDate-constraint="0" expand="true">
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="5" name="MIP 3D Frame" color="#ffff33" meeting="false" start="2019-06-07" duration="15" complete="0" thirdDate="2019-06-07" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="176" name="Aéro" meeting="false" start="2019-05-08" duration="30" complete="20" expand="false">
+        <task id="176" name="Aéro" meeting="false" start="2019-05-08" duration="30" complete="20" expand="true">
             <task id="20" name="Réunion Aéro" color="#330033" meeting="false" start="2019-05-08" duration="16" complete="75" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                 <task id="0" name="Organiser réunion Aéro 1" color="#ffff33" meeting="false" start="2019-05-08" duration="6" complete="100" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                     <depend id="168" type="2" difference="0" hardness="Strong"/>
