@@ -75,14 +75,21 @@ def insertTest(params,dico):
 
 
 if __name__ == '__main__':
-    testSet = sio.loadmat('dataFit/R8_Brake_Pacejka_89.mat').keys()
-    glossary = dict()
-    for testName in testSet:
-        if testName in ['__globals__', '__header__', '__version__']:
-            continue
-        testName = str2arr(testName)
-        #print(testName)
-        value2glossary(testName)
+    fileNames = [
+        *['R{}_Brake_Pacejka_89'.format(i) for i in range(5,9)],
+        *['R{}_Corner_Pacejka_89'.format(i) for i in range(5, 9)]
+    ]
 
-    with open('glossary/brake.json','w') as f:
-        json.dump(glossary, f)
+    glossary = dict()
+
+    for file in fileNames:
+        testSet = sio.loadmat('dataFit/{}.mat'.format(file)).keys()
+        for testName in testSet:
+            if testName in ['__globals__', '__header__', '__version__']:
+                continue
+            testName = str2arr(testName)
+            #print(testName)
+            value2glossary(testName)
+
+        with open('glossary/glossary.json','w') as f:
+            json.dump(glossary, f)
