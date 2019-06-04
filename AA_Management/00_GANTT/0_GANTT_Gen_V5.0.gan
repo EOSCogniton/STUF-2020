@@ -6,7 +6,7 @@
         <field id="tpd5" name="Date de fin" width="66" order="2"/>
         <option id="taskLabelLeft" value="name"/>
         <option id="taskLabelRight" value="coordinator"/>
-        <option id="color.recent"><![CDATA[#ff0000 #ff00ff #00cc00 #ffff33 #cccccc #ece9d8 #ffffff #000000 #330033 #0066ff]]></option>
+        <option id="color.recent"><![CDATA[#ff00ff #ff0000 #00cc00 #ffff33 #cccccc #ece9d8 #ffffff #000000 #330033 #0066ff]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Nom" width="210" order="0"/>
@@ -119,17 +119,17 @@ Agostino Accel]]></notes>
                 <task id="183" name="Centre de gravité" color="#ffff33" meeting="false" start="2019-05-16" duration="12" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true"/>
             </task>
             <task id="178" name="Budget" meeting="false" start="2019-05-08" duration="23" complete="37" expand="true">
-                <task id="38" name="Relancer Devis" color="#ffff33" meeting="false" start="2019-05-08" duration="5" complete="100" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
+                <task id="38" name="Relancer Devis" color="#ff00ff" meeting="false" start="2019-05-08" duration="5" complete="100" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
                     <depend id="184" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="184" name="Devis" color="#ffff33" meeting="false" start="2019-05-15" duration="18" complete="20" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true"/>
+                <task id="184" name="Devis" color="#ff00ff" meeting="false" start="2019-05-15" duration="18" complete="20" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true"/>
             </task>
-            <task id="179" name="Temps" meeting="false" start="2019-05-16" duration="10" complete="0" expand="true">
-                <task id="185" name="H.Homme" color="#cccccc" meeting="false" start="2019-05-16" duration="2" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
+            <task id="179" name="Temps" meeting="false" start="2019-05-16" duration="20" complete="16" expand="true">
+                <task id="185" name="H.Homme" color="#ff00ff" meeting="false" start="2019-05-16" duration="2" complete="100" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
                     <depend id="187" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="187" name="Fraction" color="#cccccc" meeting="false" start="2019-05-20" duration="2" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true"/>
-                <task id="186" name="Recrutement" color="#cccccc" meeting="false" start="2019-05-16" duration="10" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
+                <task id="187" name="Fraction" color="#ff00ff" meeting="false" start="2019-05-20" duration="2" complete="100" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true"/>
+                <task id="186" name="Recrutement" color="#ff00ff" meeting="false" start="2019-05-16" duration="20" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
                     <notes><![CDATA[PAi/PAr]]></notes>
                 </task>
             </task>
@@ -152,7 +152,7 @@ Agostino Accel]]></notes>
                 <task id="348" name="Simplifier l'aéro" color="#ff00ff" meeting="false" start="2019-05-22" duration="20" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true"/>
             </task>
         </task>
-        <task id="116" name="LAS" meeting="false" start="2019-05-08" duration="40" complete="44" expand="false">
+        <task id="116" name="LAS" meeting="false" start="2019-05-08" duration="40" complete="44" expand="true">
             <task id="117" name="Pneu" meeting="false" start="2019-05-08" duration="20" complete="43" expand="true">
                 <task id="118" name="Modèle de pneu" color="#ff0000" meeting="false" start="2019-05-08" duration="10" complete="100" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true">
                     <notes><![CDATA[Code
@@ -214,8 +214,8 @@ nce
                     <depend id="19" type="2" difference="0" hardness="Strong"/>
                 </task>
             </task>
-            <task id="57" name="Refroidissement" color="#000000" meeting="false" start="2019-05-27" duration="5" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
-                <task id="58" name="Architecture à définir" color="#0066ff" meeting="false" start="2019-05-27" duration="5" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+            <task id="57" name="Refroidissement" color="#000000" meeting="false" start="2019-06-03" duration="5" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                <task id="58" name="Architecture à définir" color="#0066ff" meeting="false" start="2019-06-03" duration="5" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                     <notes><![CDATA[A définir en fonction du choix aéro]]></notes>
                 </task>
             </task>
