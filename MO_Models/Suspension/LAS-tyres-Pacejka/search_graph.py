@@ -1,12 +1,8 @@
 import json
 
-def loadGlossary(filePath):
-    """"""
-    global glossary
-    with open(str(filePath)) as f:
-        glossary = json.load(f)
+with open('glossary/glossary.json') as f:
+    glossary = json.load(f)
 
-    
 
 def searchUpLow(query):
     """
