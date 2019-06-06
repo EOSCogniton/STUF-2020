@@ -20,9 +20,9 @@ query = [# comment values to remove them from the query
     "8",  #round
 
     #tire
-    "C",  #make
-    "B",  #model
-    "13", #rim diameter
+    "H",  #make
+    "H",  #model
+    "10", #rim diameter
     "7",  #rim width
 
     #physics

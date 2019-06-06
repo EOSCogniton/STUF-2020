@@ -7,7 +7,9 @@ mu en fonction de Fz et Vitesse
 # glossary file is a global variable loaded in the search_graph library
 
 #%% 1 - search the glossary for available Fz values with a valid query
-from search_graph import searchNext, searchCombi
+from search_graph import searchNext, searchCombi, loadGlossary
+
+loadGlossary('glossary/brake.json')
 
 query = [# comment values to remove them from the query
     #test
@@ -17,13 +19,13 @@ query = [# comment values to remove them from the query
     #tire
     "C",  #make
     "B",  #model
-    "13", #rim diameter
+    "10", #rim diameter
     "7",  #rim width
 
     #physics
     "12f", #pressure
     "25",  #speed
-#    "100", #load (FZ)
+    "100", #load (FZ)
 
     #geometry
 #    "0",  #camber

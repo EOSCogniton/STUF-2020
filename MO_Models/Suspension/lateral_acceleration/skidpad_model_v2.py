@@ -25,7 +25,7 @@ h_pilot= 0.3 # hauteur de centre de gravité du pilote en m
 
 #%% CAR DATAS
 
-m_car= 195
+m_car= 200
 h_car= 0.3
 
 tf= 1.236     # voie avant (en m)
@@ -78,7 +78,7 @@ FY_10=np.array([0,1519.182,1073.523,2320.305,583.316,1923.809])*q
 #Pneus 13" pour un slip angle optimal
 FY_13=np.array([0,1783.995,1233.106,2692.902,676.343,3363.065])*q
 
-m_10 = 5 # différence de masse entre la configuration 13" et 10"
+m_10 = 12.750 # différence de masse entre la configuration 13" et 10"
 
 if tire=='10':
     FY=FY_10
@@ -132,4 +132,4 @@ time=2*pi*sqrt((R_skidpad+max(tf,tr)/2)/amax)
 print(fsolve(FORCE,g)[0] , ',' , fsolve(FORCE_f,g)[0] , ',' , fsolve(FORCE_r,g)[0])
 print('accélération:',acc,'g')
 print('temps au skid pad:',time,'s')
-#print('score au skid-pad:',score(time))
+print('score au skid-pad:',score(time))
