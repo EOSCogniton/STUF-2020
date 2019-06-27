@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><project name="Gantt EPSA" company="EPSA" webLink="http://" view-date="2019-04-27" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.10" locale="fr">
     <description/>
     <view zooming-state="default:3" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="163" order="0"/>
-        <field id="tpd4" name="Date de début" width="67" order="1"/>
-        <field id="tpd5" name="Date de fin" width="66" order="2"/>
+        <field id="tpd3" name="Nom" width="154" order="0"/>
+        <field id="tpd4" name="Date de début" width="64" order="1"/>
+        <field id="tpd5" name="Date de fin" width="63" order="2"/>
         <option id="taskLabelLeft" value="name"/>
         <option id="taskLabelRight" value="coordinator"/>
         <option id="color.recent"><![CDATA[#ff00ff #ff0000 #00cc00 #ffff33 #cccccc #ece9d8 #ffffff #000000 #330033 #0066ff]]></option>
@@ -68,16 +68,16 @@
             <task id="113" name="CCA" color="#cccccc" meeting="false" start="2019-05-27" duration="8" complete="0" thirdDate="2019-04-25" thirdDate-constraint="0" expand="true"/>
             <task id="349" name="Rapport de PE" color="#cccccc" meeting="false" start="2019-05-22" duration="12" complete="0" thirdDate="2019-04-29" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="47" name="Frame" meeting="false" start="2019-05-08" duration="43" complete="47" expand="true">
+        <task id="47" name="Frame" meeting="false" start="2019-05-08" duration="43" complete="52" expand="true">
             <task id="10" name="Finir BOM" color="#ffff33" meeting="false" start="2019-05-08" duration="4" complete="100" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
             <task id="45" name="Recontacter Tachon" color="#ffff33" meeting="false" start="2019-05-08" duration="7" complete="100" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
             <task id="353" name="Continuer test chassis surfacique" color="#ffff33" meeting="false" start="2019-05-22" duration="33" complete="20" thirdDate="2019-04-29" thirdDate-constraint="0" expand="true"/>
-            <task id="360" name="Cdcf des sous systèmes" color="#ffff33" meeting="false" start="2019-05-22" duration="6" complete="80" thirdDate="2019-05-02" thirdDate-constraint="0" expand="true">
+            <task id="360" name="Cdcf des sous systèmes" color="#ffff33" meeting="false" start="2019-05-22" duration="6" complete="100" thirdDate="2019-05-02" thirdDate-constraint="0" expand="true">
                 <depend id="3" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="3" name="KPI et CCA" color="#ffff33" meeting="false" start="2019-05-30" duration="6" complete="70" thirdDate="2019-05-30" thirdDate-constraint="0" expand="true"/>
+            <task id="3" name="KPI et CCA" color="#ffff33" meeting="false" start="2019-05-30" duration="6" complete="100" thirdDate="2019-05-30" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="176" name="Aéro" meeting="false" start="2019-05-08" duration="49" complete="38" expand="true">
+        <task id="176" name="Aéro" meeting="false" start="2019-05-08" duration="126" complete="25" expand="true">
             <task id="20" name="Réunion Aéro" color="#330033" meeting="false" start="2019-05-08" duration="49" complete="75" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                 <task id="0" name="Organiser réunion Aéro 1" color="#ff00ff" meeting="false" start="2019-05-08" duration="6" complete="100" thirdDate="2019-01-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                     <depend id="168" type="2" difference="0" hardness="Strong"/>
@@ -114,35 +114,37 @@ Agostino Accel]]></notes>
                 </task>
                 <task id="184" name="Devis" color="#ff00ff" meeting="false" start="2019-05-15" duration="18" complete="20" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true"/>
             </task>
-            <task id="179" name="Temps" meeting="false" start="2019-05-16" duration="20" complete="16" expand="true">
+            <task id="179" name="Temps" meeting="false" start="2019-05-16" duration="120" complete="3" expand="true">
                 <task id="185" name="H.Homme" color="#ff00ff" meeting="false" start="2019-05-16" duration="2" complete="100" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
                     <depend id="187" type="2" difference="0" hardness="Strong"/>
                 </task>
                 <task id="187" name="Fraction" color="#ff00ff" meeting="false" start="2019-05-20" duration="2" complete="100" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true"/>
-                <task id="186" name="Recrutement" color="#ff00ff" meeting="false" start="2019-05-16" duration="20" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
+                <task id="186" name="Recrutement" color="#ff00ff" meeting="false" start="2019-06-13" duration="100" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
                     <notes><![CDATA[PAi/PAr]]></notes>
                 </task>
             </task>
-            <task id="180" name="Fallback plan" meeting="false" start="2019-05-16" duration="14" complete="40" expand="true">
+            <task id="180" name="Fallback plan" meeting="false" start="2019-05-16" duration="14" complete="70" expand="true">
                 <task id="214" name="Plans listés" color="#ff00ff" meeting="false" start="2019-05-16" duration="8" complete="100" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
                     <depend id="192" type="2" difference="0" hardness="Strong"/>
                     <depend id="215" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="215" name="Plans datés" color="#ff00ff" meeting="false" start="2019-05-28" duration="6" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true"/>
+                <task id="215" name="Plans datés" color="#ff00ff" meeting="false" start="2019-05-28" duration="6" complete="100" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true"/>
                 <task id="192" name="Perte si annulation" color="#ff00ff" meeting="false" start="2019-05-28" duration="6" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true"/>
             </task>
-            <task id="328" name="Prototypage" meeting="false" start="2019-05-22" duration="15" complete="75" expand="true">
+            <task id="328" name="Prototypage" meeting="false" start="2019-05-22" duration="25" complete="64" expand="true">
                 <task id="329" name="Réflexion" color="#ff00ff" meeting="false" start="2019-05-22" duration="5" complete="100" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true">
                     <depend id="332" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="332" name="Nervure Bois" color="#ff00ff" meeting="false" start="2019-05-29" duration="10" complete="100" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true"/>
-                <task id="380" name="Toile cirée" color="#ff00ff" meeting="false" start="2019-05-29" duration="5" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true"/>
+                <task id="332" name="Nervure Bois" color="#ff00ff" meeting="false" start="2019-05-29" duration="10" complete="100" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true">
+                    <depend id="380" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="380" name="Toile cirée" color="#ff00ff" meeting="false" start="2019-06-12" duration="10" complete="10" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true"/>
             </task>
-            <task id="358" name="Design du kit" meeting="false" start="2019-05-22" duration="20" complete="0" expand="true">
-                <task id="348" name="Simplifier l'aéro" color="#ff00ff" meeting="false" start="2019-05-22" duration="20" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true"/>
+            <task id="358" name="Design du kit" meeting="false" start="2019-05-22" duration="40" complete="0" expand="true">
+                <task id="348" name="Simplifier l'aéro" color="#ff00ff" meeting="false" start="2019-05-22" duration="40" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true"/>
             </task>
         </task>
-        <task id="116" name="LAS" meeting="false" start="2019-05-08" duration="48" complete="46" expand="false">
+        <task id="116" name="LAS" meeting="false" start="2019-05-08" duration="48" complete="46" expand="true">
             <task id="117" name="Pneu" meeting="false" start="2019-05-08" duration="48" complete="43" expand="true">
                 <task id="118" name="Modèle de pneu" color="#ff0000" meeting="false" start="2019-05-08" duration="10" complete="100" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true">
                     <notes><![CDATA[Code
@@ -181,7 +183,7 @@ nce
                 <task id="387" name="Prise en main de LOTUS" color="#ff0000" meeting="false" start="2019-05-29" duration="10" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true"/>
             </task>
         </task>
-        <task id="48" name="Motorisation" color="#000000" meeting="false" start="2019-05-06" duration="25" complete="37" thirdDate="2019-05-06" thirdDate-constraint="0" expand="false">
+        <task id="48" name="Motorisation" color="#000000" meeting="false" start="2019-05-06" duration="25" complete="37" thirdDate="2019-05-06" thirdDate-constraint="0" expand="true">
             <task id="50" name="Modèle" color="#000000" meeting="false" start="2019-05-08" duration="13" complete="96" thirdDate="2019-05-08" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                 <task id="73" name="Optimum Lap" color="#0066ff" meeting="false" start="2019-05-08" duration="10" complete="100" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                     <notes><![CDATA[Circuit FS ATA]]></notes>
@@ -218,7 +220,7 @@ nce
                 <task id="69" name="Sytème de remplissage plus léger" color="#0066ff" meeting="false" start="2019-05-08" duration="18" complete="45" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
             </task>
         </task>
-        <task id="169" name="SEISM" meeting="false" start="2019-05-22" duration="114" complete="33" expand="false">
+        <task id="169" name="SEISM" meeting="false" start="2019-05-22" duration="114" complete="33" expand="true">
             <task id="170" name="Démarchage" meeting="false" start="2019-05-22" duration="23" complete="58" expand="true">
                 <task id="171" name="Caméra de casque" color="#00cc00" meeting="false" start="2019-05-22" duration="7" complete="100" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true"/>
                 <task id="408" name="Relancer pour la caméra" color="#00cc00" meeting="false" start="2019-06-17" duration="5" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true"/>
