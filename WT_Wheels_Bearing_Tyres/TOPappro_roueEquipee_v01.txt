@@ -1,0 +1,390 @@
+<div style="text-align:center;">'''Sous-système S34 Roue équipée '''</div>
+
+= Modèle Systémique Primitif (MSP) =
+
+Diagramme flux d’énergie échangées dans le sous système S34
+
+[[Image:Image4.png|top]]
+
+= Cahier des Charges Fonctionnel (CdCF) =
+
+== Roue Équipée Avant ==
+
+
+{| style="border-spacing:0;width:20.359cm;"
+|- style="border:none;padding:0cm;"
+| colspan="3"  align=center| Fonction Primaire
+| colspan="3"  align=center| Fonction Secondaire
+| align=center| Critère
+| align=center| Unité
+| align=center| Niveau
+| align=center| Flexibilité
+| align=center| Article Règlement concerné
+|- style="border:none;padding:0cm;"
+| align=center style="color:#000000;" | F
+| align=center style="color:#000000;" | 0
+| align=center style="color:#000000;" | supporter l'ensemble des pièces d'une roue équipée
+|| F0
+| align=right| 1
+|| supporter la roue à l'essieu 
+|| rigidité axiale
+| style="color:#000000;" | Nm
+| align=right style="color:#000000;" | 1
+| align=right style="color:#000000;" | 1
+|| 
+|- style="border:none;padding:0cm;"
+| align=right| 2
+|| respecter le CdCF du système S0
+|| vie des roulements
+| style="color:#000000;" | km 
+| align=right style="color:#000000;" | 1000
+| style="color:#000000;" | min 
+|| 
+|- style="border:none;padding:0cm;"
+| align=right style="color:#000000;" | 3
+| style="color:#000000;" | les pneus sur le même axe doivent être du même taille, modèle et marque
+|| taille des roues
+| style="color:#000000;" | pouces
+| align=right style="color:#000000;" | 13
+| style="color:#000000;" | aucune
+|| T 2.5.2
+|- style="border:none;padding:0cm;"
+|| F
+| align=right style="color:#000000;" | 1
+|| supporter la roue (pneu + jante)
+|| F1
+| align=right style="color:#000000;" | 1
+|| supporter la roue au moyeu
+|| intégrer un système de maintien en position des écrous qui fixent la jante
+| style="color:#000000;" | binaire
+| style="color:#000000;" | oui
+| style="color:#000000;" | aucune
+|| T 2.4.1
+|- style="border:none;padding:0cm;"
+| align=right style="color:#000000;" | 2
+| style="color:#000000;" | supporter les roulements sur le moyeu
+|| jeu radiale 
+|| mm
+| align=right| 0
+| style="color:#000000;" | aucune
+|| 
+|- style="border:none;padding:0cm;"
+|| jeu axiale 
+|| mm
+| align=right| 0
+| style="color:#000000;" | aucune
+|| 
+|- style="border:none;padding:0cm;"
+| align=right style="color:#000000;" | 3
+| style="color:#000000;" | positionner la piste du capter de vitesse
+|| précision de positionnement
+| style="color:#000000;" | mm
+| align=right style="color:#000000;" | 1
+| align=right style="color:#000000;" | 1
+|| 
+|- style="border:none;padding:0cm;"
+| align=right style="color:#000000;" | 4
+| style="color:#000000;" | supporter le disque du frein au moyeu
+|| défaut d'alignement
+| style="color:#000000;" | deg
+| align=right style="color:#000000;" | 0.01
+| style="color:#000000;" | max
+|| 
+|-
+| style="border:none;padding:0cm;" | F
+| align=right style="border:none;padding:0cm;color:#000000;" | 2
+| style="border:none;padding:0cm;" | supporter le système de suspension
+| style="background-color:transparent;border:none;padding:0cm;" | F2
+| align=right style="border:none;padding:0cm;color:#000000;" | 1
+| style="border:none;padding:0cm;color:#000000;" | supporter les roulements dans le porte-moyeu
+| style="border:none;padding:0cm;" | jeu radiale 
+| style="border:none;padding:0cm;color:#000000;" | mm
+| align=right style="border:none;padding:0cm;color:#000000;" | 0
+| style="border:none;padding:0cm;color:#000000;" | aucune
+| style="border:none;padding:0cm;" | 
+|- style="border:none;padding:0cm;"
+|| jeu axiale
+| style="color:#000000;" | mm
+| align=right style="color:#000000;" | 0
+| style="color:#000000;" | aucune
+|| 
+|- style="border:none;padding:0cm;"
+| align=right style="color:#000000;" | 2
+|| supporter la biellette de direction
+|| couple au volant
+| style="color:#000000;" | Nm
+| align=right style="color:#000000;" | 10
+| style="color:#000000;" | max
+|| 
+|- style="border:none;padding:0cm;"
+|| présence d'un système de réglage
+| style="color:#000000;" | binaire
+| style="color:#000000;" | oui
+| style="color:#000000;" | aucune
+|| 
+|- style="border:none;padding:0cm;"
+| align=right style="color:#000000;" | 3
+| style="color:#000000;" | supporter les triangles
+|| jeu mécanique
+| style="color:#000000;" | mm
+| align=right style="color:#000000;" | 0.01
+| style="color:#000000;" | max
+|| 
+|- style="border:none;padding:0cm;"
+| align=right style="color:#000000;" | 4
+| style="color:#000000;" | loger le capteur de vitesse
+|| précision d'alignement avec la piste sur le moyeu
+| style="color:#000000;" | mm
+| align=right style="color:#000000;" | 1
+| align=right style="color:#000000;" | 1
+|| 
+|- style="border:none;padding:0cm;"
+|| F
+| align=right style="color:#000000;" | 3
+|| supporter le système de freinage
+|| F3
+| align=right style="color:#000000;" | 1
+| style="color:#000000;" | guider le disque de frein dans l’étrier
+|| défaut d'alignement disque étrier
+| style="color:#000000;" | deg
+| align=right style="color:#000000;" | 0.01
+| style="color:#000000;" | max
+|| 
+|- style="border:none;padding:0cm;"
+| align=right style="color:#000000;" | 2
+| style="color:#000000;" | supporter l’étrier au porte moyeu
+|| défaut d'alignement étrier axe de la roue
+| style="color:#000000;" | deg
+| align=right style="color:#000000;" | 0.01
+| style="color:#000000;" | max
+|| 
+|-
+|}
+
+
+== Roue Équipée Arrière ==
+
+
+{| style="border-spacing:0;width:20.359cm;"
+|- style="border:none;padding:0cm;"
+| colspan="3"  align=center| Fonction Primaire
+| colspan="3"  align=center| Fonction Secondaire
+| align=center| Critère
+| align=center| Unité
+| align=center| Niveau
+| align=center| Flexibilité
+| align=center| Article Règlement concerné
+|- style="border:none;padding:0cm;"
+| align=center style="color:#000000;" | F
+| align=center style="color:#000000;" | 0
+| align=center style="color:#000000;" | supporter l'ensemble des pièces d'une roue équipée
+|| F0
+| align=right| 1
+|| supporter la roue à l'essieu
+|| rigidité axiale
+| style="color:#000000;" | Nm
+| align=right style="color:#000000;" | 1
+| align=right style="color:#000000;" | 1
+|| 
+|- style="border:none;padding:0cm;"
+| align=right| 2
+|| respecter le CdCF du système S0
+|| vie des roulements
+| style="color:#000000;" | km 
+| align=right style="color:#000000;" | 1000
+| style="color:#000000;" | min 
+|| 
+|- style="border:none;padding:0cm;"
+| align=right style="color:#000000;" | 3
+| style="color:#000000;" | les pneus sur le même axe doivent être du même taille, modèle et marque
+|| taille des roues
+| style="color:#000000;" | pouces
+| align=right style="color:#000000;" | 13
+| style="color:#000000;" | aucune
+|| T 2.5.2
+|- style="border:none;padding:0cm;"
+|| F
+| align=right style="color:#000000;" | 1
+|| supporter la roue (pneu + jante)
+|| F1
+| align=right style="color:#000000;" | 1
+|| supporter la roue au moyeu
+|| intégrer un système de maintien en position des écrous qui fixent la jante
+| style="color:#000000;" | binaire
+| style="color:#000000;" | oui
+| style="color:#000000;" | aucune
+|| T 2.4.1
+|- style="border:none;padding:0cm;"
+| align=right style="color:#000000;" | 2
+| style="color:#000000;" | supporter les roulements sur le moyeu
+|| jeu radiale 
+|| mm
+| align=right| 0
+| style="color:#000000;" | aucune
+|| 
+|- style="border:none;padding:0cm;"
+|| jeu axiale 
+|| mm
+| align=right| 0
+| style="color:#000000;" | aucune
+|| 
+|- style="border:none;padding:0cm;"
+| align=right style="color:#000000;" | 3
+| style="color:#000000;" | positionner la piste du capter de vitesse
+|| précision de positionnement
+| style="color:#000000;" | mm
+| align=right style="color:#000000;" | 1
+| align=right style="color:#000000;" | 1
+|| 
+|- style="border:none;padding:0cm;"
+| align=right style="color:#000000;" | 4
+| style="color:#000000;" | supporter le disque du frein au moyeu
+|| défaut d'alignement
+| style="color:#000000;" | deg
+| align=right style="color:#000000;" | 0.01
+| style="color:#000000;" | max
+|| 
+|- style="border:none;padding:0cm;"
+|| F
+| align=right style="color:#000000;" | 2
+|| supporter le système de suspension
+|| F2
+| align=right style="color:#000000;" | 1
+| style="color:#000000;" | supporter les roulements dans le porte-moyeu
+|| jeu radiale 
+| style="color:#000000;" | mm
+| align=right style="color:#000000;" | 0
+| style="color:#000000;" | aucune
+|| 
+|- style="border:none;padding:0cm;"
+|| 
+|| jeu axiale
+| style="color:#000000;" | mm
+| align=right style="color:#000000;" | 0
+| style="color:#000000;" | aucune
+|| 
+|- style="border:none;padding:0cm;"
+| align=right style="color:#000000;" | 2
+|| supporter le ''tripod''
+|| jeu axiale
+| style="color:#000000;" | mm
+| align=right style="color:#000000;" | 0
+| style="color:#000000;" | max
+|| 
+|- style="border:none;padding:0cm;"
+| align=right style="color:#000000;" | 3
+| style="color:#000000;" | supporter les triangles
+|| jeu mécanique
+| style="color:#000000;" | mm
+| align=right style="color:#000000;" | 0.01
+| style="color:#000000;" | max
+|| 
+|- style="border:none;padding:0cm;"
+| align=right style="color:#000000;" | 4
+| style="color:#000000;" | loger le capteur de vitesse
+|| précision d'alignement avec la piste sur le moyeu
+| style="color:#000000;" | mm
+| align=right style="color:#000000;" | 1
+| align=right style="color:#000000;" | 1
+|| 
+|- style="border:none;padding:0cm;"
+|| F
+| align=right style="color:#000000;" | 3
+|| supporter le système de freinage
+|| F3
+| align=right style="color:#000000;" | 1
+| style="color:#000000;" | guider le disque de frein dans l’étrier
+|| défaut d'alignement disque étrier
+| style="color:#000000;" | deg
+| align=right style="color:#000000;" | 0.01
+| style="color:#000000;" | max
+|| 
+|- style="border:none;padding:0cm;"
+| align=right style="color:#000000;" | 2
+| style="color:#000000;" | supporter l’étrier au porte moyeu
+|| défaut d'alignement étrier axe de la roue
+| style="color:#000000;" | deg
+| align=right style="color:#000000;" | 0.01
+| style="color:#000000;" | max
+|| 
+|-
+|}
+
+
+= Conception Conceptuelle et Architectural (CCA) su sous-système S34 roue équipée =
+
+== Architectures étudiés ==
+
+Afin de réduire la contribution massique et l’apporte en inertie (Izz avec z axe normal au plan de la route) su système S34, deux configurations ont été étudiées: taille de roues 13 pouces et 10 pouces.
+
+== La modélisation des pneumatiques \ref{rapp de pe} ==
+
+Dans le cadre de la conception préliminaire d'un véhicule il est impératif de connaître le comportement de l'organe qui le relie au sol c'est-à-dire le pneu. Le problème majeur qui caractérise un tel modèle est le nombre de dégrées de liberté qui influencent le comportement réel de la gomme dont le pneumatique est composé. C'est pourquoi, même si traditionnellement les entreprises spécialisées utilisent des modèles qui comptent plus d'un million de paramètres, pour la conception de notre voiture, on a choisit des modèles régulièrement rencontrés dans la littérature \cite{rcd}. 
+
+Pour un pneumatique, parmi les paramètres fondamentaux on retrouve par exemple:* le modèle du pneu et la marque qui l'a produit
+* la taille de la roue (traditionnellement 10" ou 13")
+* la vitesse à la quelle on fait rouler le pneu
+* la pression à la quelle on gonfle le pneu
+* la force avec la quelle on charge le pneu 
+* d'autres paramètres liés à la géométrie du système de suspension
+
+
+
+Pour le système S0 Invictus, on utilise un modèle appelé de Pacejka '89 \cite{rcd} qui réduit la complexité d'un modèle de pneu à environ 6 paramètres. Cela permet de travailler avec un modèle simple mais suffisamment précis pour notre niveau technique. 
+
+Tout modèle mathématique nécessite aussi un réglage empirique afin de bien coller à la réalité. Dans notre cas ce calibrage est fait en partant des essais amenés par l'organisation Tire Testing Consortium (TTC). En pratique, plusieurs modèles de pneumatique pour le Formula Student ont été testé selon des pratiques assez communes dans le secteur de l'automobile.
+
+Le code python et matlab qui réalise ce traitement est disponible&nbsp;:
+
+[https://github.com/EOSCogniton/STUF-2020/tree/master/MO_Models/Suspension/LAS-tyres-Pacejka https://github.com/EOSCogniton/STUF-2020/tree/master/MO_Models/Suspension/LAS-tyres-Pacejka]
+
+== Choix de l’architecture ==
+
+== MIS-3D (Maquette d’Intégration Systémique) du S34  ==
+
+Maquette CATIA5 très très très préliminaire réalisée uniquement avec 2 primitives : boite et cylindre 
+
+[[Image:Image1.png|top]]
+
+== MIC-3D (Maquette d’Intégration Conceptuelle) du S34 ==
+
+Maquette CATIA5 très très préliminaire réalisée uniquement avec 7 primitives : sphère, boite, cylindre, cône, tore, extrusion, révolution.
+
+=== MIC-3D roue équipée avant ===
+
+[[Image:Image5.png|top]]
+
+=== MIC-3D roue équipée arrière ===
+
+[[Image:Image2.png|top]]
+
+== Fiche Technique Préliminaire du S34 ==
+
+
+{| style="border-spacing:0;margin:auto;width:20.359cm;"
+|-
+! align=center| S3 : Liaison au sol
+! align=center| 
+|-
+|| Roue équipée
+|| Rayon de 13 pouces, largeur / 7 pouces 
+
+
+|-
+|}
+= Presentation TOP appro =
+
+== présentation du un sous système : S34 roue équipée ==
+
+[[Image:Image6.png|top]][[Image:Image3.png|top]]
+
+progrès majeur envisagé&nbsp;:* le deux étriers vers le centre de gravité du véhicule pour réduire l’inertie Izz
+* utiliser les modèles des pneus afin de bien respecter la F22 du S34 avant
+* améliorer le système de maintient en position des roulements du S34 en étudiant l’effet d’une précontrainte axiale
+* améliorer la solution technique pour le réglage des angles dans le S34 avant et arrière
+
+
+
+risque majeur identifié&nbsp;:* une précontrainte trop élevée peut baisser la vie des roulements et ne pas assurer la fonction F02
+
+
