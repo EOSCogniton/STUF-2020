@@ -1,0 +1,17 @@
+= Introduction =
+
+Dans cette section on s’intéresse à la [http://PO-07-003/ Gamme de contrôle ][http://PO-07-003/ (PROC)] du [file:///mnt/6978197972210FBD/FSAE_invictus/STUF-2020/WT_Wheels_Bearing_Tyres/Dossier_d'ingénierie_système_du_SFF_19_S14_:_Roue_équipée SFF ][file:///mnt/6978197972210FBD/FSAE_invictus/STUF-2020/WT_Wheels_Bearing_Tyres/Dossier_d'ingénierie_système_du_SFF_19_S14_:_Roue_équipée 19 S14], spécifiant les opérations de contrôle de ce système sur banc.
+
+= Contrôle dimensionnel =
+
+Afin de vérifier la qualité de production des pièces et de valider ensuite les fonctionnalités établies dans le [file:///mnt/6978197972210FBD/FSAE_invictus/STUF-2020/WT_Wheels_Bearing_Tyres/CdCF%2019_S14 CdCF] on a mesuré les pièces produites à l’aide des machines de mesure du MSGMGC.
+
+[[Image:Image1.png|top]]
+
+== Moyeu ==
+
+En F'''ig.1 '''on retrouve dans la coupe du moyeu. Pour vérifier la correcte production de cette pièce on mesure la contrainte de cylindricité dans la zone rouge encadré dans la '''Fig.1'''
+
+== Frette de frein ==
+
+En '''Fig.1 '''on retrouve dans la coupe de la frette de frein. Pour vérifier la correcte production de cette pièce on mesure la contrainte de planéité dans la zone bleue encadré dans la '''Fig.1 '''afin de assurer l’alignement avec le disque de frein (ligne verte).
