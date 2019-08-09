@@ -45,6 +45,7 @@
 
 #include "CAN.h"
 #include "Gear_Update.h"
+#include "Screen128x64.h"
 #include "Led_Strip.h"
 #include "Temp_Volt.h"
 #include "projectconfig.h"
@@ -134,6 +135,8 @@ void setup(){
     // Gear Init
     
     Gear_Init();
+
+    Screen_Init();
 
 }
 
