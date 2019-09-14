@@ -6,6 +6,7 @@ set datafile sep ';'
 set key box opaque
 set autoscale
 set grid
+set format y "%.2f"
 
 set ylabel 'camber [deg]'
 unset xlabel
