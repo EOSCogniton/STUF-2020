@@ -23,7 +23,7 @@ set ylabel 'kingpin [deg]'
 unset xlabel
 plot "bump.csv" using 1:5 w lp
 
-set ylabel 'spring ratio'
+set ylabel 'spring travel [mm]'
 plot "bump.csv" using 1:6 w lp
 
 set ylabel 'anti-dive [%]'
