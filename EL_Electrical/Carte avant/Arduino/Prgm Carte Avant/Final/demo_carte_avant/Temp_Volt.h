@@ -7,20 +7,10 @@
 //    Inclusion of the necessary libraries and functions
 /**************************************************************************/
 
-#include <SPI.h>
-#include "Adafruit_MCP23008.h"
-
-extern Adafruit_MCP23008 mcp;
-
-
 
 /**************************************************************************/
 //    Inclusion of the necessary libraries
 /**************************************************************************/
-
-extern const boolean PINS_R1[10][8];
-extern const boolean PINS_R2[10][8];
-
 
 
 /**************************************************************************/

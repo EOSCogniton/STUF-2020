@@ -40,18 +40,14 @@
 
 #include <SPI.h>
 #include <mcp_can.h>
-#include "Adafruit_MCP23008.h"
 #include <Adafruit_DotStar.h>
 
 #include "CAN.h"
-#include "Gear_Update.h"
 #include "Screen128x64.h"
 #include "Led_Strip.h"
 #include "Temp_Volt.h"
 #include "projectconfig.h"
 #include "State_LC.h"
-
-Adafruit_MCP23008 mcp;
 
 
 /**************************************************************************/
@@ -119,22 +115,12 @@ void setup(){
     // Configuring pin for /INT input
     pinMode(CAN0_INT, INPUT); 
 
-    
-    // Turn Off all Seven Segment
-    for(Init_Seven_Segments=0;Init_Seven_Segments<=2;Init_Seven_Segments++){ //This shuts off all segments at the begining
-        mcp.begin(Init_Seven_Segments);
-        for(int i=0;i<=7;i++){
-            mcp.pinMode(i,OUTPUT);
-            mcp.digitalWrite(i,1);
-        }
-        Serial.println("7 Segment Init Successfully!");
-    }
 
     Led_Init();
 
     // Gear Init
     
-    Gear_Init();
+    // Gear_Init();
 
     Screen_Init();
 
@@ -145,10 +131,11 @@ void loop(){
     // Code de demo
 
     for(Gear=1;Gear<=4;Gear++){
-        for(Rpm=0;Rpm<=100;Rpm++){
-            Gear_Update(Gear);
+        for(Rpm=0;Rpm<=10;Rpm++){
+            Screen_Update(Gear,91+Rpm,104-Rpm);
+            //Gear_Update(Gear);
             Tachometer((Rpm*50+9000),Gear);
-            delay(100);
+            delay(40);
         }
     }
 }
