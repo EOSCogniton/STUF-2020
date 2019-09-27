@@ -7,17 +7,11 @@
 //    Inclusion of the necessary libraries
 /**************************************************************************/
 
-#include <SPI.h>
-#include "Adafruit_MCP23008.h"
-
 
 
 /**************************************************************************/
 //    External variables and constants used by the functions in this file
 /**************************************************************************/
-
-extern Adafruit_MCP23008 mcp;
-extern const boolean PINS_GEAR[5][7];
 
 
 
