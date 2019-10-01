@@ -1,5 +1,5 @@
 set multiplot layout 4,3 columnsfirst \
-	title "point LAS AV\_1 (top pushrod)"\
+	title "point LAS AV - 32 (lateral pull rod)"\
     spacing 0.5,0.5
 
 set datafile sep ';'
