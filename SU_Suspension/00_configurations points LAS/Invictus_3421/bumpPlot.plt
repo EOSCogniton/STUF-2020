@@ -1,5 +1,5 @@
 set multiplot layout 3,2 columnsfirst \
-	title " Invictus3420 - v01 (rear is dashed)"\
+	title " Invictus3421 - v02 (rear is dashed)"\
     spacing 0.5,0.5
 
 set datafile sep ';'
