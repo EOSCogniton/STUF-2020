@@ -50,8 +50,8 @@ plot "bumpAV.csv" using 1:12 w lp ls 1 axes x1y1, "bumpAV.csv" using 1:13 w lp l
 set ylabel 'RC_y [mm]'
 set y2label 'RC_z [mm]'
 set xlabel 'roll [deg]'
-plot "rollAV.csv" using 1:12 w lp ls 1 axes x1y1, "rollAV.csv" using 1:13 w lp ls 2 axes x1y2,\
-	"rollAR.csv" using 1:12 w lp ls 3 axes x1y1, "rollAR.csv" using 1:13 w lp ls 4 axes x1y2
+plot "rollAV.csv" using 1:14 w lp ls 1 axes x1y1, "rollAV.csv" using 1:15 w lp ls 2 axes x1y2,\
+	"rollAR.csv" using 1:14 w lp ls 3 axes x1y1, "rollAR.csv" using 1:15 w lp ls 4 axes x1y2
 
 set ylabel 'caster [deg]'
 set y2label 'mechanical trail [mm]'

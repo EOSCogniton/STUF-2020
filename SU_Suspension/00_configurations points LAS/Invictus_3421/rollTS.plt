@@ -40,3 +40,4 @@ plot "bumpAV.csv" using 1:12 w lp ls 1 axes x1y1, "bumpAV.csv" using 1:13 w lp l
 	"bumpAR.csv" using 1:12 w lp ls 3 axes x1y1, "bumpAR.csv" using 1:13 w lp ls 4 axes x1y2
 
 
+
