@@ -34,19 +34,18 @@ set style line 4 \
 	
 set ytics nomirror tc ls 1
 set y2tics nomirror tc ls 2
-
+unset key
 
 set ylabel 'camber [deg]' tc ls 1
 set y2label 'kingpin [deg]' tc ls 2
 unset xlabel
-unset key
 plot "rollAV.csv" using 1:2 w lp ls 1 axes x1y1, "rollAV.csv" using 1:3 w lp ls 2 axes x1y2,\
 	"rollAR.csv" using 1:2 w lp ls 3 axes x1y1, "rollAR.csv" using 1:3 w lp ls 4 axes x1y2
 
-set ylabel 'spindle length [mm]'
-set y2label 'scrub radius [mm]'
-plot "rollAV.csv" using 1:4 w lp ls 1 axes x1y1, "rollAV.csv" using 1:5 w lp ls 2 axes x1y2,\
-	"rollAR.csv" using 1:4 w lp ls 3 axes x1y1, "rollAR.csv" using 1:5 w lp ls 4 axes x1y2
+set ylabel 'toe (SAE) [deg]'
+set y2label 'antidive [-]'
+plot "bumpAV.csv" using 1:12 w lp ls 1 axes x1y1, "bumpAV.csv" using 1:13 w lp ls 2 axes x1y2,\
+	"bumpAR.csv" using 1:12 w lp ls 3 axes x1y1, "bumpAR.csv" using 1:13 w lp ls 4 axes x1y2
 
 set ylabel 'RC_y [mm]'
 set y2label 'RC_z [mm]'
@@ -62,15 +61,15 @@ plot "rollAV.csv" using 1:6 w lp ls 1 axes x1y1, "rollAV.csv" using 1:7 w lp ls 
 	"rollAR.csv" using 1:6 w lp ls 3 axes x1y1, "rollAR.csv" using 1:7 w lp ls 4 axes x1y2
 
 set ylabel 'spring travel [mm]'
-set y2label 'ARB travel [mm]'
-plot "rollAV.csv" using 1:8 w lp ls 1 axes x1y1, "rollAV.csv" using 1:9 w lp ls 2 axes x1y2,\
-	"rollAR.csv" using 1:8 w lp ls 3 axes x1y1, "rollAR.csv" using 1:9 w lp ls 4 axes x1y2
-
-set ylabel 'toe (SAE) [deg]'
-set y2label 'antidive [-]'
+set y2label 'spring ratio [-]'
+plot "bumpAV.csv" using 1:8 w lp ls 1 axes x1y1, "bumpAV.csv" using 1:9 w lp ls 2 axes x1y2,\
+	"bumpAR.csv" using 1:8 w lp ls 3 axes x1y1, "bumpAR.csv" using 1:9 w lp ls 4 axes x1y2
+	
+set ylabel 'ARB travel [mm]'
+set y2label 'ARB ratio [-]'
 set xlabel 'roll [deg]'
-plot "rollAV.csv" using 1:10 w lp ls 1 axes x1y1, "rollAV.csv" using 1:11 w lp ls 2 axes x1y2,\
-	"rollAR.csv" using 1:10 w lp ls 3 axes x1y1, "rollAR.csv" using 1:11 w lp ls 4 axes x1y2
+plot "bumpAV.csv" using 1:10 w lp ls 1 axes x1y1, "bumpAV.csv" using 1:11 w lp ls 2 axes x1y2,\
+	"bumpAR.csv" using 1:10 w lp ls 3 axes x1y1, "bumpAR.csv" using 1:11 w lp ls 4 axes x1y2
 
 
 unset multiplot
