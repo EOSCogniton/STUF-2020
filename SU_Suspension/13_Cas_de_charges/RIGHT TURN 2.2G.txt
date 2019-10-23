@@ -1,4 +1,4 @@
-    BJ rear uf a-arm     frame               396.003   542.916   173.439      .000      .000      .000 
+BJ rear uf a-arm     frame               396.003   542.916   173.439      .000      .000      .000 
   BJ rear ur a-arm     frame              -396.097  1140.396   364.308      .000      .000      .000 
   BJ rear lr a-arm     frame               -68.251   259.457      .263      .000      .000      .000 
   BJ rear lf a-arm     frame                68.184   123.429      .125      .000      .000      .000 
@@ -40,6 +40,3 @@
   PO fr wheel          fr upright            -.001    16.748      .782      .000      .000      .000 
   PO fr wheel          fr upright             .000   359.386 -7698.797      .000      .000      .000 
   PI fr rocker         frame                  .000   579.150   -53.836      .000      .000      .000 
-  PO sol               fr wheel          -3197.145      .000      .000      .000      .000      .000 
-  PO sol               frame             -3197.158      .000      .000      .000      .000      .000 
-  PO sol               frame                  .000      .000      .000      .000      .000      .000 
