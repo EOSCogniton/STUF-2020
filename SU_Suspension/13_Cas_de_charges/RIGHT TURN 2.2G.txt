@@ -1,0 +1,42 @@
+BJ rear uf a-arm     frame               396.003   542.916   173.439      .000      .000      .000 
+  BJ rear ur a-arm     frame              -396.097  1140.396   364.308      .000      .000      .000 
+  BJ rear lr a-arm     frame               -68.251   259.457      .263      .000      .000      .000 
+  BJ rear lf a-arm     frame                68.184   123.429      .125      .000      .000      .000 
+  BJ rr upright        rear uf a-arm       396.003   542.916   173.439      .000      .000      .000 
+  BJ rr upright        rear ur a-arm      -396.097  1140.396   364.308      .000      .000      .000 
+  BJ rr upright        rear lr a-arm       -68.251   259.457      .263      .000      .000      .000 
+  BJ rr upright        rear lf a-arm        68.184   123.429      .125      .000      .000      .000 
+  BJ rr tie-rod        frame                  .035     -.246     -.014      .000      .000      .000 
+  BJ rr upright        rr tie-rod             .035     -.246     -.014      .000      .000      .000 
+  BJ rr upright        rr push-rod            .126 -2065.951   707.970      .000      .000      .000 
+  BJ rr push-rod       rr rocker              .126 -2065.951   707.970      .000      .000      .000 
+  BJ rr rocker         rr ohlins              .000 -1496.438  -399.889      .000      .000      .000 
+  BJ rr ohlins         frame                  .000 -1496.438  -399.889      .000      .000      .000 
+  PI rr rocker         frame                  .126  -569.514  1107.859      .000    -5.709   -32.141 
+  PO sol               rr wheel               .000      .000  1246.090      .000      .000      .000 
+  PO rr wheel          rr upright             .000      .003      .101      .000      .000      .000 
+  SS rr wheel          rr upright             .010      .000  1209.381      .000      .000      .000 
+  SS rr wheel          rr upright            -.010      .000    36.607      .000      .000      .000 
+  PO rr wheel          rr upright             .000     -.003      .000      .000      .000      .000 
+  BJ front uf a-arm    frame               695.428  2030.013  -109.165      .000      .000      .000 
+  BJ front ur a-arm    frame               868.725 -2534.040   136.269      .000      .000      .000 
+  BJ front lr a-arm    frame             -2577.320  6681.703  -738.471      .000      .000      .000 
+  BJ front lf a-arm    frame             -2199.726 -5943.479   656.881      .000      .000      .000 
+  BJ fr upright        front lf a-arm    -2199.726 -5943.479   656.881      .000      .000      .000 
+  BJ fr upright        front lr a-arm    -2577.320  6681.703  -738.471      .000      .000      .000 
+  BJ fr upright        front ur a-arm      868.725 -2534.040   136.269      .000      .000      .000 
+  BJ fr upright        front uf a-arm      695.428  2030.013  -109.165      .000      .000      .000 
+  BJ fr upright        fr pull-rod            .000   534.588   382.646      .000      .000      .000 
+  BJ fr pull-rod       fr rocker              .000   534.588   382.646      .000      .000      .000 
+  BJ fr rocker         fr ohlins              .000   -44.562   436.481      .000      .000      .000 
+  BJ fr ohlins         frame                  .000   -44.562   436.481      .000      .000      .000 
+  BJ fr upright        fr tie-rod           15.748  -768.785    25.750      .000      .000      .000 
+  BJ fr tie-rod        frame                15.748  -768.785    25.750      .000      .000      .000 
+  PO sol               frame                  .000      .000  1246.091      .000      .000      .000 
+  PO sol               fr wheel               .000      .000   353.910      .000      .000      .000 
+  PO sol               frame                  .000      .000   353.910      .000      .000      .000 
+  SS fr wheel          fr upright          531.930    64.480 -1380.344      .000      .000      .000 
+  SS fr wheel          fr upright        -3729.074  -440.614  9432.270      .000      .000      .000 
+  PO fr wheel          fr upright            -.001    16.748      .782      .000      .000      .000 
+  PO fr wheel          fr upright             .000   359.386 -7698.797      .000      .000      .000 
+  PI fr rocker         frame                  .000   579.150   -53.836      .000      .000      .000 
