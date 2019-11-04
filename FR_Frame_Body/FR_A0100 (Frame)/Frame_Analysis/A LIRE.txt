@@ -1,0 +1,2 @@
+Ne pas toucher ce filaire, problème de lien dans Catia : ce filaire est le filaire d'Invictus, mais il ne faut pas le renommer, 
+ni le dossier qui est avec.
