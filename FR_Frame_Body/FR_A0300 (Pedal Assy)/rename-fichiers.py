@@ -2,9 +2,7 @@ import os
 
 #chemin du dossier où se trouvent les fichiers à renommer
 #mettre le fichier texte dans ce dossier
-path='C:\Users\Calixthe\Desktop\EPSA\STUF-2020\FR_Frame_Body\FR_A0300 (Pedal Assy)' #à modifier, ne pas oublier les \\ ou le /
-
-
+path='C:/Users/jodie/Documents/GitKraken/STUF-2020/FR_Frame_Body/FR_A0300 (Pedal Assy)' #à modifier, ne pas oublier les \\ ou le /
 
 
 def rename(path):
@@ -19,6 +17,7 @@ def rename(path):
     for k in range(len(list_old)):
         try:
             os.rename(list_old[k],list_new[k])
-            print('FICHIER '+str(list_old[k])+' RENOMME EN '+str(list_new[k]))
+            print('\t'+str(list_old[k])+' --> '+str(list_new[k]))
+            print('----------')
         except:
             print('fichier à ce nom non trouvé')
