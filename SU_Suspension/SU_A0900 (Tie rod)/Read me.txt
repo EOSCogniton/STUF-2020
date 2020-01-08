@@ -1,6 +1,0 @@
-Pour modifier les paramètres, cliquez sur le bouton fonction. Puis pour modifier les valeurs faites une recherche des longueurs 
-puis choisir sa longueur:
--Rinternebarre
--profondeur
--tete
--Rtete
