@@ -1,9 +1,9 @@
 START RECORD GO HERE.                                                   S      1
-1H,,1H;,20HCNEXT - IGES PRODUCT,33H20B_WT_03003 (Bearing Washer).igs,44HG      1
-IBM CATIA IGES - CATIA Version 5 Release 19 ,27HCATIA Version 5 Release G      2
-19 ,32,75,6,75,15,8HWT_03003,1.0,2,2HMM,1000,1.0,15H20200103.163327,    G      3
-0.001,10000.0,17HMartin Kawczynski,15HDESKTOP-UDLM1FC,11,0,15H20200103.1G      4
-63327,;                                                                 G      5
+1H,,1H;,20HCNEXT - IGES PRODUCT,38H20B_WT_03003 (Rear Bearing Spacer).igG      1
+s,44HIBM CATIA IGES - CATIA Version 5 Release 19 ,27HCATIA Version 5 RelG      2
+ease 19 ,32,75,6,75,15,8HWT_03003,1.0,2,2HMM,1000,1.0,15H20200113.003128G      3
+,0.001,10000.0,17HMartin Kawczynski,15HDESKTOP-UDLM1FC,11,0,15H20200113.G      4
+003128,;                                                                G      5
      406       1       0       0       0       0       0       000010201D      1
      406       0       0       1      15                               0D      2
      108       2       0       0       0       0       0       001010001D      3
