@@ -1,8 +1,9 @@
 START RECORD GO HERE.                                                   S      1
-1H,,1H;,20HCNEXT - IGES PRODUCT,16H20M_SU_05002.igs,44HIBM CATIA IGES - G      1
-CATIA Version 5 Release 19 ,27HCATIA Version 5 Release 19 ,32,75,6,75,  G      2
-15,8HSU_05002,1.0,2,2HMM,1000,1.0,15H20191219.165550,0.001,10000.0,5HthiG      3
-lv,8HPREDATOR,11,0,15H20191219.165550,;                                 G      4
+1H,,1H;,20HCNEXT - IGES PRODUCT,48HSU_05002 (Ohlins ball joint spacer M8G      1
+  20mm).igs,44HIBM CATIA IGES - CATIA Version 5 Release 19 ,27HCATIA VerG      2
+sion 5 Release 19 ,32,75,6,75,15,8HSU_05002,1.0,2,2HMM,1000,1.0,15H20200G      3
+114.170343,0.001,10000.0,17HMartin Kawczynski,15HDESKTOP-UDLM1FC,11,0,  G      4
+15H20200114.170343,;                                                    G      5
      406       1       0       0       0       0       0       000010201D      1
      406       0       0       1      15                               0D      2
      110       2       0       0       0       0       0       001010001D      3
@@ -264,4 +265,4 @@ lv,8HPREDATOR,11,0,15H20191219.165550,;                                 G      4
 102,2,143,147,0,0;                                                   149P    105
 142,0,127,0,149,2,0,0;                                               151P    106
 144,127,1,1,139,151,0,1,1;                                           153P    107
-S      1G      4D    154P    107                                        T      1
+S      1G      5D    154P    107                                        T      1
