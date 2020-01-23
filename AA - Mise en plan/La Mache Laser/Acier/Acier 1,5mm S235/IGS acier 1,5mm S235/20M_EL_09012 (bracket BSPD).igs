@@ -1,8 +1,8 @@
 START RECORD GO HERE.                                                   S      1
 1H,,1H;,20HCNEXT - IGES PRODUCT,31H20M_EL_09012 (bracket BSPD).igs,44HIBG      1
 M CATIA IGES - CATIA Version 5 Release 19 ,27HCATIA Version 5 Release 19G      2
- ,32,75,6,75,15,12HChappes BSPD,1.0,2,2HMM,1000,1.0,15H20200107.173509, G      3
-0.001,10000.0,5Hlecoc,7HPC-COCO,11,0,15H20200107.173509,;               G      4
+ ,32,75,6,75,15,12HChappes BSPD,1.0,2,2HMM,1000,1.0,15H20200123.201610, G      3
+0.001,10000.0,15HMathieu Jacquet,5HMBPRO,11,0,15H20200123.201610,;      G      4
      406       1       0       0       0       0       0       000010201D      1
      406       0       0       1      15                               0D      2
      108       2       0       0       0       0       0       001010001D      3
