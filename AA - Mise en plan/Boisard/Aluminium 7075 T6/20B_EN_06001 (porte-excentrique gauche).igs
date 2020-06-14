@@ -2,8 +2,8 @@ START RECORD GO HERE.                                                   S      1
 1H,,1H;,20HCNEXT - IGES PRODUCT,43H20B_EN_06001 (porte-excentrique gauchG      1
 e).igs,44HIBM CATIA IGES - CATIA Version 5 Release 19 ,27HCATIA Version G      2
 5 Release 19 ,32,75,6,75,15,32HEN_06001 (Left Excentric Bearer),1.0,2,2HG      3
-MM,1000,1.0,15H20200609.174254,0.001,10000.0,17HMartin Kawczynski,15HDESG      4
-KTOP-UDLM1FC,11,0,15H20200609.174254,;                                  G      5
+MM,1000,1.0,15H20200611.144342,0.001,10000.0,17HMartin Kawczynski,15HDESG      4
+KTOP-UDLM1FC,11,0,15H20200611.144342,;                                  G      5
      406       1       0       0       0       0       0       000010201D      1
      406       0       0       1      15                               0D      2
      110       2       0       0       0       0       0       001010001D      3
