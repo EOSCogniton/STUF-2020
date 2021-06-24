@@ -4,6 +4,7 @@
 
 parallel= True
     
+toe=1/180*pi
 
 def balance(r):
 
@@ -139,14 +140,7 @@ plt.xlabel('Inner steering angle (°)')
 plt.ylabel('Outter steering angle (°)')
 plt.grid(True)
 
-plt.figure(4)
-plt.clf()
-plt.plot(radius,accel_max/g)
-plt.xlabel('Turning radius (m)')
-plt.ylabel('Maximum lateral aceleration (g)')
-plt.grid(True)
-
-plt.show()
+c
 
 #plt.figure(5)
 #plt.clf()

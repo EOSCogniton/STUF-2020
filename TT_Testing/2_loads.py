@@ -29,16 +29,16 @@ def LOAD_ri(ay,R_corner):
 #%% PLOT
     
 
-ay = np.linspace(1.2,2.2,30)
+ay = np.linspace(1,1.6,30)
 R_corner=0
 
 
 plt.clf()
 
-plt.plot(ay,LOAD_fo(ay*g,R_corner),label='front exterior load')
-plt.plot(ay,LOAD_fi(ay*g,R_corner),label='front interior load')
-plt.plot(ay,LOAD_ro(ay*g,R_corner),label='rear exterior load')
-plt.plot(ay,LOAD_ri(ay*g,R_corner),label='rear interior load')
+plt.plot(ay,LOAD_fo(ay*g,R_corner),label='front outter load')
+plt.plot(ay,LOAD_fi(ay*g,R_corner),label='front inner load')
+plt.plot(ay,LOAD_ro(ay*g,R_corner),label='rear outter load')
+plt.plot(ay,LOAD_ri(ay*g,R_corner),label='rear inner load')
 
 plt.xlabel('Acceleration (g)')
 plt.ylabel('Vertical load (N)')

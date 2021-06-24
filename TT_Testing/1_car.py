@@ -321,15 +321,19 @@ plt.clf()
 #plt.plot(180/pi*list_sa,Fy(1400,list_sa,3*pi/180),label='Fz = 1400 N, camber = 3°')
 #plt.plot(180/pi*list_sa,Fy(1400,list_sa,4*pi/180),label='Fz = 1400 N, camber = 4°')
 
-plt.plot(180/pi*list_sa,Fy(1000,list_sa,0),label='outter tire, Fz = 1200 N')
-plt.plot(180/pi*list_sa,Fy(200,list_sa,0),label='inner tire, Fz = 230 N')
-plt.plot(180/pi*list_sa,Fy(300,list_sa,0),label='Fz = 300 N')
-plt.plot(180/pi*list_sa,Fy(400,list_sa,0),label='Fz = 400 N')
-plt.plot(180/pi*list_sa,Fy(500,list_sa,0),label='Fz = 500 N')
-plt.plot(180/pi*list_sa,Fy(600,list_sa,0),label='Fz = 600 N')
-plt.plot(180/pi*list_sa,Fy(700,list_sa,0),label='Fz = 700 N')
-plt.plot(180/pi*list_sa,Fy(800,list_sa,0),label='Fz = 800 N')
-plt.plot(180/pi*list_sa,Fy(900,list_sa,0),label='Fz = 900 N')
+for ind in range(1,7):
+    str_Z='Fz = ' + str(ind*200) + ' N '
+    plt.plot(180/pi*list_sa,Fy(ind*200,list_sa,0),label=str_Z)
+    
+#plt.plot(180/pi*list_sa,Fy(1000,list_sa,0),label='outter tire, Fz = 1200 N')
+#plt.plot(180/pi*list_sa,Fy(200,list_sa,0),label='inner tire, Fz = 230 N')
+#plt.plot(180/pi*list_sa,Fy(300,list_sa,0),label='Fz = 300 N')
+#plt.plot(180/pi*list_sa,Fy(400,list_sa,0),label='Fz = 400 N')
+#plt.plot(180/pi*list_sa,Fy(500,list_sa,0),label='Fz = 500 N')
+#plt.plot(180/pi*list_sa,Fy(600,list_sa,0),label='Fz = 600 N')
+#plt.plot(180/pi*list_sa,Fy(700,list_sa,0),label='Fz = 700 N')
+#plt.plot(180/pi*list_sa,Fy(800,list_sa,0),label='Fz = 800 N')
+#plt.plot(180/pi*list_sa,Fy(900,list_sa,0),label='Fz = 900 N')
 
 plt.ylabel('Lateral grip force (N)')
 plt.xlabel('Slip angle (°)')
